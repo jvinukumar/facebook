@@ -1,0 +1,24 @@
+<form>
+    <div class="col">
+      <div class="col">
+        <input type="text" name="firstname" [(ngModel)]="data.firstname" class="form-control" placeholder="First name">
+      </div>
+
+      <div class="col">
+        <input type="text" name="lastname" [(ngModel)]="data.lastname" class="form-control" placeholder="Last name">
+      </div>
+      <div class="col">
+        <input type="text"  name="rollnumber" [(ngModel)]="data.rollnumber" class="form-control" placeholder="Roll number">
+      </div>
+      <div class="col">
+        <input type="text"  name="branch" [(ngModel)]="data.branch" class="form-control" placeholder="Branch">
+      </div>
+      <div class="col">
+        <input type="text"  name="collegename" [(ngModel)]="data.collegename" class="form-control" placeholder="College name">
+      </div>
+
+      <div class="col">
+        <button type="submit"  (click)="Onsubmit()" class="btn btn-primary" >submit data</button>
+      </div>
+    </div>
+  </form>

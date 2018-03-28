@@ -1,0 +1,8 @@
+
+ <div class="col">
+  <button type="submit"  (click)="showDetails = !showDetails" class="btn btn-primary" >Show/Hide Details</button>
+</div>
+
+<ul *ngIf="showDetails">
+  <li *ngFor="let detail of data">{{ detail.firstname }}</li> 
+</ul>
